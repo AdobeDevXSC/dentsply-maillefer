@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/dentsply-maillefer/:/",
+    "/content/dentsply-maillefer/configuration:/.helix/config.json",
+    "/content/dentsply-maillefer/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/dentsply-maillefer/"
   ]
 }
