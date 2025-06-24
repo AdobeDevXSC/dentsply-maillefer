@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/dentsply-maillefer/main"
+    url: "https://author-p128652-e1252175.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/dentsply-maillefer/main"
     type: "markup"
     suffix: ".html"
