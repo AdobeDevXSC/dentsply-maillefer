@@ -12,12 +12,15 @@
 
 :root {
   /* colors */
+  --primary-brand-color: #bf0000;
+  --secondary-brand-color: #e23534;
+
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --link-color: var(--secondary-brand-color);
+  --link-hover-color: var(--primary-brand-color);
 
   /* fonts */
   --body-font-family: open-sans, roboto, roboto-fallback, sans-serif;
@@ -37,7 +40,8 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 121px;
+  --mobile-nav-height: 90px;
 }
 
 /* fallback fonts */
@@ -86,6 +90,12 @@ body.appear {
 
 header {
   height: var(--nav-height);
+}
+
+@media (width <= 900px) {
+  header { 
+    height: 91px;
+  }
 }
 
 header .header,
@@ -181,8 +191,8 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  /* background-color: var(--link-color); */
+  color: var(--primary-brand-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -193,8 +203,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
-  cursor: pointer;
+  color: #000;
 }
 
 button:disabled,

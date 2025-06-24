@@ -162,5 +162,12 @@ export default async function decorate(block) {
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
+
+  /* custom html re-decoration for demo purposes */
+  const lastSection = nav.querySelector('.section:last-of-type');
+  lastSection.classList.add('nav-sections-extended');
+  navSections.prepend(lastSection);
+  console.log("lastSection: ", lastSection);
+
   block.append(navWrapper);
 }
