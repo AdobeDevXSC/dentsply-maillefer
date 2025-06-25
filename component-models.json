@@ -138,9 +138,16 @@
             "value": "highlight"
           },
           {
+            "name": "Text Left",
+            "value": "text-left"
+          },
+          {
             "name": "Text Center",
             "value": "text-center"
-          
+          },
+          {
+            "name": "Text Right",
+            "value": "text-right"
           }
         ]
       }
@@ -192,30 +199,6 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
-      }
-    ]
-  },
-  {
-    "id": "column",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "label": "Text Alignment",
-        "options": [
-          {
-            "name": "text-left",
-            "value": "text-left"
-          },
-          {
-            "name": "text-center",
-            "value": "text-center"
-          },
-          {
-            "name": "text-right",
-            "value": "text-right"
-          }
-        ]
       }
     ]
   },

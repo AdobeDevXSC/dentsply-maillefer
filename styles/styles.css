@@ -274,6 +274,12 @@ main .section.highlight {
   padding: 40px 0;
 }
 
+main .section.text-left > div {
+  text-align: left;
+}
 main .section.text-center > div {
   text-align: center;
+}
+main .section.text-right > div {
+  text-align: right;
 }
