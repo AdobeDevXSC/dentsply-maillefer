@@ -180,6 +180,25 @@
         ]
       },
       {
+        "component": "select",
+        "name": "classes",
+        "label": "Text Alignment",
+        "options": [
+          {
+            "name": "text-left",
+            "value": "text-left"
+          },
+          {
+            "name": "text-center",
+            "value": "text-center"
+          },
+          {
+            "name": "text-right",
+            "value": "text-right"
+          }
+        ]
+      },
+      {
         "component": "text",
         "valueType": "number",
         "name": "columns",
