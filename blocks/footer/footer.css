@@ -1,20 +1,104 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  font-size: 14px;
 }
 
-footer .footer > div {
+footer .footer > div > .section > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: 1300px;
+  padding: 24px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
+/* first section */
+footer .footer .section:first-of-type > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 0 24px;
+}
+
+footer .footer .section:first-of-type > div p {
+  display: none;
+}
+
+footer .footer .section:first-of-type picture {
+  display: flex;
+}
+
+@media (width >= 1050px) {
+  footer .footer .section:first-of-type > div p {
+    display: block;
+    font-size: 15px;
+    color: #777;
+    padding-right: 7rem;
+  }
+}
+
+/* second section */
+footer .footer .section:nth-of-type(2) {
+  background-color: var(--tertiary-brand-color);
+  color: #fff;
+  padding: 40px 24px;
+}
+
+footer .footer .section:nth-of-type(2) ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+footer .footer .section:nth-of-type(2) > div > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer .footer .section:nth-of-type(2) > div > ul > li > ul {
+  margin-top: 10px;
+}
+
+footer .footer .section:nth-of-type(2) > div > ul > li > ul > li {
+  margin-top: 10px;
+}
+
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  footer .footer .section:nth-of-type(2) {
+    padding: 40px 24px 100px;
+  }
+
+  footer .footer .section:nth-of-type(2) > div > ul {
+    flex-direction: row;
+  }
+
+  footer .footer .section:nth-of-type(2) > div > ul {
+    gap: 10rem;
+  }
+}
+
+/* third section */
+footer .footer .section:nth-of-type(3) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+footer .footer .section:nth-of-type(3) p,
+footer .footer .section:nth-of-type(3) a {
+  color: #777;
+  font-size: 13px;
+}
+
+@media (width >= 900px) {
+  footer .footer .section:nth-of-type(3) > div {
+    flex-direction: row;
+    align-items: center;
   }
 }

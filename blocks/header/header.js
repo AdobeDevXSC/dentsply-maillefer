@@ -167,7 +167,6 @@ export default async function decorate(block) {
   const lastSection = nav.querySelector('.section:last-of-type');
   lastSection.classList.add('nav-sections-extended');
   navSections.prepend(lastSection);
-  console.log("lastSection: ", lastSection);
-
+  
   block.append(navWrapper);
 }

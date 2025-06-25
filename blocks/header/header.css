@@ -327,7 +327,7 @@ header .nav-sections-extended > div {
   align-items: center;
 }
 
-header .nav-sections-extended > div img[alt='ready-steel'] {
+header .nav-sections-extended > div img {
   height: 10px;
   width: auto;
 }
