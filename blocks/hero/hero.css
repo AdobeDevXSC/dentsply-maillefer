@@ -6,14 +6,19 @@
 .hero {
   position: relative;
   padding: 40px 24px;
-  min-height: 300px;
 }
 
 .hero h1 {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  margin: 0;
+  color: #555555;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.hero h1 strong {
+  font-weight: normal;
+  color: #bf0000;
 }
 
 .hero picture {
@@ -33,5 +38,17 @@
 @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
+    min-height: 340px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+    margin: 2rem auto;
+  }
+}
+
+@media (width <= 768px) {
+  .hero h1 {
+    font-size: 16px;
   }
 }
