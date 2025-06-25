@@ -1,3 +1,4 @@
+/* default */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,26 @@
   display: block;
 }
 
+.columns h2,
+.columns h6 {
+  margin: 1rem 0;
+  color: var(--primary-brand-color);
+}
+
+.columns h2 {
+  font-size: 25px;
+}
+
+.columns h6 {
+  font-size: 16px;
+}
+
+.columns p {
+  font-size: 16px;
+  color: #959595;
+  font-weight: 400;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
@@ -30,4 +51,29 @@
     flex: 1;
     order: unset;
   }
+
+  .columns h2 {
+    font-size: 50px;
+  }
+
+  .columns p {
+    font-size: 24px;
+  }
+}
+
+/* block variation - offset */
+.columns.offset {
+
+}
+
+
+/* text alignment */
+.columns.text-left {
+  text-align: left;
+}
+.columns.text-center {
+  text-align: center;
+}
+.columns.text-right {
+  text-align: right;
 }

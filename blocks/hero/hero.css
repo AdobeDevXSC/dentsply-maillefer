@@ -9,11 +9,10 @@
 }
 
 .hero h1 {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0;
   color: #555555;
   font-weight: 400;
-  font-size: 35px;
 }
 
 .hero h1 strong {
@@ -42,7 +41,6 @@
   }
 
   .hero h1 {
-    font-size: 60px;
     margin: 2rem auto;
   }
 }

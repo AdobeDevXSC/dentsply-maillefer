@@ -33,15 +33,15 @@
   --body-font-size-xs: 16px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 16px;
-  --heading-font-size-xl: 16px;
-  --heading-font-size-l: 16px;
+  --heading-font-size-xxl: 60px;
+  --heading-font-size-xl: 50px;
+  --heading-font-size-l: 30px;
   --heading-font-size-m: 27px;
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 121px;
+  --nav-height: 118px;
   --mobile-nav-height: 90px;
 }
 
@@ -58,7 +58,7 @@
   src: local('Arial');
 }
 
-@media (width >= 900px) {
+@media (width <= 900px) {
   :root {
     /* body sizes */
     --body-font-size-m: 18px;
@@ -129,6 +129,14 @@ h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
+
+@media (width <= 768px) {
+  .section > .default-content-wrapper h1,
+  .section > .default-content-wrapper h2,
+  .section > .default-content-wrapper h3 {
+    font-size: 16px;
+  }
+}
 
 p,
 dl,
@@ -243,7 +251,7 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1300px;
+  max-width: 1350px;
   margin: auto;
   padding: 0 24px;
 }
