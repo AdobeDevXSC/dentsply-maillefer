@@ -70,10 +70,35 @@
 }
 
 /* block variation - offset */
-.columns.offset {
-
+.columns.offset > div > div {
+  flex: unset;
+  width: 100%
 }
 
+.columns.offset > div > .columns-img-col {
+  width: auto;
+}
+
+.columns.offset > div > .columns-img-col img {
+  width: auto;
+}
+
+.columns.offset p {
+  font-size: 20px;
+  color: #4d4d4d;
+  font-weight: 400;
+}
+
+@media (width <= 900px) {
+  .columns.offset > div > .columns-img-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .columns.offset p {
+    font-size: 16px;
+  }
+}
 
 /* text alignment */
 .columns.text-left {
