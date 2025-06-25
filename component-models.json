@@ -169,6 +169,17 @@
     "id": "columns",
     "fields": [
       {
+        "component": "select",
+        "name": "classes",
+        "label": "Block Variation",
+        "options": [
+          {
+            "name": "columns-offset",
+            "value": "offset"
+          }
+        ]
+      },
+      {
         "component": "text",
         "valueType": "number",
         "name": "columns",
