@@ -243,7 +243,7 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   padding: 0 24px;
 }
@@ -264,4 +264,8 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.text-center > div {
+  text-align: center;
 }
