@@ -48,6 +48,10 @@
   font-weight: 400;
 }
 
+.columns .button-container a {
+  padding: 0;
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;

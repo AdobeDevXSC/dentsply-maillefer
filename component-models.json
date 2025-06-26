@@ -134,20 +134,51 @@
         "label": "Style",
         "options": [
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "Background",
+            "children": [
+              {
+                "name": "Highlight",
+                "value": "highlight"
+              }
+            ]
           },
           {
-            "name": "Text Left",
-            "value": "text-left"
+            "name": "Text Alignment",
+            "children": [
+              {
+                "name": "Text Left",
+                "value": "text-left"
+              },
+              {
+                "name": "Text Center",
+                "value": "text-center"
+              },
+              {
+                "name": "Text Right",
+                "value": "text-right"
+              }
+            ]
           },
           {
-            "name": "Text Center",
-            "value": "text-center"
-          },
-          {
-            "name": "Text Right",
-            "value": "text-right"
+            "name": "Padding",
+            "children": [
+              {
+                "name": "None",
+                "value": "no-padding"
+              },
+              {
+                "name": "Small Padding",
+                "value": "sm-padding"
+              },
+              {
+                "name": "Medium Padding",
+                "value": "md-padding"
+              },
+              {
+                "name": "Large Padding",
+                "value": "lg-padding"
+              }
+            ]
           }
         ]
       }
