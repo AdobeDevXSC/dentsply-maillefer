@@ -297,8 +297,8 @@
     "fields": [
       {
         "component": "aem-content",
-        "name": "link",
-        "label": "Spreadsheet Link"
+        "name": "reference",
+        "label": "Reference"
       }
     ]
   }
