@@ -185,6 +185,22 @@
     ]
   },
   {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Block Variation",
+        "options": [
+          {
+            "name": "Product Cards",
+            "value": "product-cards"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -289,16 +305,6 @@
           { "name": "Default", "value": "master" },
           { "name": "Variation 1", "value": "Variation 1" }
         ]
-      }
-    ]
-  },
-  {
-    "id": "product-cards",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
       }
     ]
   }
