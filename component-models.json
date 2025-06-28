@@ -291,5 +291,15 @@
         ]
       }
     ]
+  },
+  {
+    "id": "product-cards",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Spreadsheet Link"
+      }
+    ]
   }
 ]
