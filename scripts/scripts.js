@@ -12,6 +12,10 @@ import {
   loadCSS,
 } from './aem.js';
 
+export function isAuthorEnvironment() {
+  return document.querySelector('*[data-aue-resource]') !== null;
+}
+
 /**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from

@@ -46,23 +46,20 @@ export default async function decorate(block) {
 
   block.setAttribute('data-aue-type', 'container');
   block.innerHTML = `
-  <div class='block' data-aue-resource=${itemId} data-aue-label='Teaser' data-aue-type='reference' data-aue-filter='cf'>
-		<div class='card-body-content'>
-        <p data-aue-prop='pretitle' data-aue-label='Pre-Title' data-aue-type='text' class='pretitle'>${
-          cfReq?.pretitle
-        }</p>
-        <h2 data-aue-prop='title' data-aue-label='Title' data-aue-type='text' class='title'>${
+  <div class='teaser' data-aue-resource=${itemId} data-aue-label='Teaser' data-aue-type='reference' data-aue-filter='cf'>
+    <div>
+        <h4 data-aue-prop='title' data-aue-label='Title' data-aue-type='text' class='title'>${
           cfReq?.title
-        }</h2>
+        }</h4>
         <p data-aue-prop='description' data-aue-label='Description' data-aue-type='richtext' class='description'>${
           cfReq?.description?.plaintext
         }</p>
-        <div data-aue-prop='image' data-aue-label='Image' data-aue-type='richtext' class='card-body-image'>
-          <img src='${cfReq?.image?._publishUrl}' title='${cfReq?.title}'/>
-        </div>
         <p data-aue-prop='ctaLabel' data-aue-label='CTA' data-aue-type='text' class='cta-link'>
           <a class='button' href='${cfReq?.ctaUrl}' target='_blank'>${cfReq?.ctaLabel}</a>
         </p>
+    </div>
+    <div data-aue-prop='image' data-aue-label='Image' data-aue-type='reference' class='columns-img-col'>
+      <img src='${cfReq?.image?._publishUrl}' title='Image'/>
     </div>
   </div>
 	`;
