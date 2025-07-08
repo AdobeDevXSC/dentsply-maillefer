@@ -3,7 +3,7 @@ version: 1
 indices:
   pages:
     include:
-      - '/**'
+      - '/products/**'
     exclude:
       - '/**.json'
     target: /products/query-index.json
