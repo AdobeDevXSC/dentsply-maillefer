@@ -6,7 +6,7 @@ indices:
       - '/**'
     exclude:
       - '/**.json'
-    target: /query-index.json
+    target: /products/query-index.json
     properties:
       title: 
         select: head > meta[property="og:title"]

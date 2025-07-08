@@ -1,4 +1,9 @@
 
+function fetchQueryJSON() {
+  const QUERY_PATH = '/products/query-index.json';
+
+}
+
 function createProductMenuSidebar(section, data) {
   const html = `
     <div class="product-side-menu">
