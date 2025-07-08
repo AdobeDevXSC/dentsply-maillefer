@@ -24,9 +24,9 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "page type",
+        "name": "template",
         "multi": false,
-        "label": ""
+        "label": "Template"
       }   
     ]
   },
