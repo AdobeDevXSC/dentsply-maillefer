@@ -26,7 +26,13 @@
         "valueType": "string",
         "name": "template",
         "multi": false,
-        "label": "Template"
+        "label": "Template",
+        "options": [
+          {
+            "name": "Product Listing & Details",
+            "value": "product-listing-details"
+          }
+        ]
       }   
     ]
   },
