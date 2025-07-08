@@ -301,3 +301,39 @@ main .section.md-padding {
 main .section.lg-padding {
   padding: 6rem 0;
 }
+
+/* Mobile-first reverse layout (applies below 600px) */
+.product-listing-details main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Use grid-template-areas for ordering */
+.product-listing-details main > :first-child {
+  order: 2;
+}
+
+.product-listing-details main > :last-child {
+  order: 1;
+}
+
+/* Desktop layout at 600px and up */
+@media (width >= 900px) {
+  .product-listing-details main {
+    max-width: 1400px;
+    margin: 0 auto 24px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    gap: 24px;
+  }
+
+  /* Reset order for larger viewports */
+  .product-listing-details main > :first-child {
+    order: 0;
+  }
+
+  .product-listing-details main > :last-child {
+    order: 0;
+  }
+}
