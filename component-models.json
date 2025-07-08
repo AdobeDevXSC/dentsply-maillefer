@@ -22,10 +22,8 @@
         "label": "Keywords"
       },
       {
-        "component": "text",
-        "valueType": "string",
+        "component": "select",
         "name": "template",
-        "multi": false,
         "label": "Template",
         "options": [
           {
