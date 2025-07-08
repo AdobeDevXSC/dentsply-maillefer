@@ -251,7 +251,7 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1350px;
+  max-width: 1600px;
   margin: auto;
   padding: 0 24px;
 }
@@ -274,6 +274,7 @@ main .section.highlight {
   padding: 40px 0;
 }
 
+/* text alignment */ 
 main .section.text-left > div {
   text-align: left;
 }
@@ -284,6 +285,7 @@ main .section.text-right > div {
   text-align: right;
 }
 
+/* padding */
 main .section.no-padding {
   padding: 0;
 }
