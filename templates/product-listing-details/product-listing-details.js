@@ -1,15 +1,6 @@
-import { isAuthorEnvironment } from "../../scripts/scripts.js";
-
 async function fetchQueryJSON() {
-  const helixQueryPath = 'https://main--dentsply-maillefer--adobedevxsc.aem.page/products/query-index.json';
   const QUERY_PATH = '/products/query-index.json';
-  let resp = await fetch(QUERY_PATH);
-
-  if (isAuthorEnvironment) {
-    resp = await fetch(helixQueryPath);
-  } else {
-    resp = await fetch(QUERY_PATH);
-  }
+  const resp = await fetch(QUERY_PATH);
   if (!resp.ok) throw new Error('Could not fetch query index');
   const { data } = await resp.json();
   return data;
