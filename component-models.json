@@ -206,6 +206,10 @@
           {
             "name": "Product Cards",
             "value": "product-cards"
+          },
+          {
+            "name": "Product Details Cards",
+            "value": "product-details-cards"
           }
         ]
       }
