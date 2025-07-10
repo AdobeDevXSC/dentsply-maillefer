@@ -7,6 +7,7 @@
     "/content/dentsply-maillefer/products/query-index:/products/query-index.json"
   ],
   "includes": [
-    "/content/dentsply-maillefer/"
+    "/content/dentsply-maillefer/",
+    "/content/dentsply-maillefer/products/query-index.json"
   ]
 }
