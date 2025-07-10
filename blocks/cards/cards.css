@@ -86,7 +86,9 @@
 }
 
 .cards.product-details-cards ul {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .cards.product-details-cards > ul > li {
