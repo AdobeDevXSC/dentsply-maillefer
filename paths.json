@@ -5,7 +5,7 @@
     "/content/dentsply-maillefer/metadata:/metadata.json",
     "/content/dentsply-maillefer/redirects:/redirects.json",
     "/content/dentsply-maillefer/products/query-index:/products/query-index.json",
-    "/content/dentsply-maillefer/products/query-index:/products/.helix/query-index.json"
+    "/content/dentsply-maillefer/products/query-index:/products/query-index.hlx.json"
   ],
   "includes": [
     "/content/dentsply-maillefer/"
