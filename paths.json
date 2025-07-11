@@ -3,8 +3,7 @@
     "/content/dentsply-maillefer/:/",
     "/content/dentsply-maillefer/configuration:/.helix/config.json",
     "/content/dentsply-maillefer/metadata:/metadata.json",
-    "/content/dentsply-maillefer/redirects:/redirects.json",
-    "/content/dentsply-maillefer.resource/products/query-index:/products/query-index.json"
+    "/content/dentsply-maillefer/redirects:/redirects.json"
   ],
   "includes": [
     "/content/dentsply-maillefer/"
