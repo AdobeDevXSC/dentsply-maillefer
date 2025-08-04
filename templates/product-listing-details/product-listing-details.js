@@ -1,3 +1,5 @@
+import { isAuthorEnvironment } from '../../scripts/scripts.js';
+
 async function fetchQueryJSON() {
   const QUERY_PATH = '/products/query-index.json';
   const resp = await fetch(QUERY_PATH);
@@ -69,8 +71,9 @@ function createAccordionMenu(section, groupedData) {
     const children = items.filter(item => item !== categoryItem);
 
     // Use fallback if no top-level item (still create one, but won't link)
+    const isAuthorEnv = isAuthorEnvironment();
     const titleLink = document.createElement('a');
-    titleLink.href = categoryItem?.path || '#';
+    titleLink.href = isAuthorEnv ? `/content/dentsply-maillefer/${categoryItem?.path}` : categoryItem?.path || '#';
     titleLink.className = 'menu-title';
     titleLink.textContent = categoryTitle;
     header.appendChild(titleLink);
