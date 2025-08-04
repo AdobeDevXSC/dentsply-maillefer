@@ -73,7 +73,7 @@ function createAccordionMenu(section, groupedData) {
     // Use fallback if no top-level item (still create one, but won't link)
     const isAuthorEnv = isAuthorEnvironment();
     const titleLink = document.createElement('a');
-    titleLink.href = isAuthorEnv ? `/content/dentsply-maillefer/${categoryItem?.path}` : categoryItem?.path || '#';
+    titleLink.href = isAuthorEnv ? `/content/dentsply-maillefer/${categoryItem?.path}.html` : categoryItem?.path || '#';
     titleLink.className = 'menu-title';
     titleLink.textContent = categoryTitle;
     header.appendChild(titleLink);
