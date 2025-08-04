@@ -97,7 +97,8 @@ function createAccordionMenu(section, groupedData) {
 
       children.forEach(child => {
         const li = document.createElement('li');
-        li.innerHTML = `<a href="${child.path}">${formatTitle(child.title)}</a>`;
+        const href = isAuthorEnv ? `/content/dentsply-maillefer/${child?.path}.html` : child?.path || '#';
+        li.innerHTML = `<a href="${href}">${formatTitle(child.title)}</a>`;
         submenu.appendChild(li);
       });
 
